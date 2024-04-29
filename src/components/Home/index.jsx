@@ -22,7 +22,11 @@ export function Home() {
                 }
             })
 
-    if (isLoading) return <p>Carregando...</p>
+    if (isLoading) {
+        return <Load>
+                    <h2>Carregando...</h2>
+                </Load>
+    }
 
     return (
         <ThemeProvider theme={theme}>
@@ -117,4 +121,13 @@ const Type = styled.p`
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 600;
+`
+
+const Load = styled.div`
+    background-color: #0f172a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
 `

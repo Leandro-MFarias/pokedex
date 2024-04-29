@@ -157,6 +157,7 @@ const ContainerInfo = styled.div`
 `
 
 const Title = styled.h2`
+    color: ${(props) => props.theme.color};
     font-size: 32px;
     margin-bottom: 8px;
     letter-spacing: 2px;
@@ -168,6 +169,7 @@ const Title = styled.h2`
 `
 
 const Info = styled.div`
+    color: ${(props) => props.theme.color};
     font-size: 20px;
 
     @media (max-width: 580px) {
